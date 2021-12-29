@@ -1,0 +1,42 @@
+.mapErrorModal {
+
+    display: none;
+    z-index: 10;
+  
+
+  &.show {
+    display: block;
+  }
+  
+
+    .mapErrorContainer {
+  
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+     .mapErrorTitle {
+      margin-bottom: 1.5rem;
+     }
+  
+      .errorIcon {
+        
+        margin-bottom: 1.5rem;
+        
+      }
+
+    
+      .errorText {
+        font-weight: 100;
+        margin-bottom:2rem;
+        color: #F07070;
+      }
+
+      .modalBtnContainer {
+        margin-bottom: 0.5rem;
+      }
+
+    }
+  
+    
+  }

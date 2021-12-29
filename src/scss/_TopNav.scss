@@ -1,0 +1,346 @@
+.TopNav {
+  position: absolute;
+  top: 20px;
+  z-index: 999;
+  width: 100%;
+
+
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+
+    
+    .filterTab,
+    .mapTab,
+    .sliderContainer,
+    .mapContainer,
+    .infoBtn, .titleContainer, .infoModal {
+      display: flex;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(20px);
+
+      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.12);
+
+      &:hover {
+        cursor: default;
+      }
+    }
+
+    .titleContainer {
+      margin-left: 24px;
+      border-radius: 5px;
+
+      .titleTab {
+        
+        padding: 12px 24px;
+        display: flex;
+
+        .title_logo_container {
+          display: flex;
+          padding-right: 16px;
+          border-right: 2px solid $borderColor;
+  
+          .title {
+            margin-top: 5px;
+            margin-right: 12px;
+            font-size: 25px;
+            font-weight: 500;
+          }
+    
+          .logo {
+            width: 30px;
+          }
+        }
+
+        .info {
+          font-size: 20px;
+          margin-left: 16px;
+          line-height: 36px;
+
+        }
+
+      }
+      
+    }
+
+    .menuElements {
+      display: inherit;
+
+      .dropDownArrow {
+        margin-top: 2px;
+      }
+
+    }
+
+    .filterContainer,
+    .mapListContainer, .titleContainer {
+      position: relative;
+    }
+
+    .filterTab,
+    .mapTab,
+    .infoBtn {
+      padding: 16px 24px;
+
+      border-radius: 8px;
+      margin-right: 24px;
+      margin-bottom: 4px;
+    }
+
+    .filterTab,
+    .mapTab {
+      font-size: 25px;
+    }
+
+    .titleContainer:hover {
+      .infoModal {
+        display: block;
+      }
+    }
+
+
+    .filterContainer:hover {
+      .dropDownArrow {
+        transition: 0.2s;
+        transform: rotate(180deg);
+      }
+
+      .sliderContainer {
+        display: block;
+      }
+    }
+
+    .mapListContainer:hover {
+      .dropDownArrow {
+        transition: 0.2s;
+        transform: rotate(180deg);
+      }
+
+      .mapContainer {
+        display: block;
+      }
+    }
+
+
+    .mapContainer {
+    display: none;
+    min-width: 280px;
+    right: 0;
+    margin-right: 24px;
+      
+    }
+
+    .sliderContainer {
+      /* display: flex;
+     flex-direction: column; */
+     display: none;
+     right: 0;
+     margin-right: 24px;
+    }
+
+    .infoModal {
+      display: none;
+    }
+
+    .sliderContainer,
+    .mapContainer, .infoModal {
+      
+      position: absolute;
+
+      border-radius: 8px;
+
+      .listActionBtn {
+        display: flex;
+        font-weight: bold;
+        padding: 8px ;
+        border-radius: 3px;
+
+        &:hover {
+          cursor: pointer;
+          background: $secondaryHoverColor;
+        }
+
+        p {
+          margin-left: 8px;
+          opacity: 0.7;
+        }
+
+
+      }
+
+      .filterContainer {
+        padding: 20px 24px;
+      }
+
+      .colorFilterContainer,
+      .otherFilterContainer {
+        border-bottom: 1px solid $borderColor;
+      }
+
+      .styleSlider {
+        margin-bottom: 14px;
+
+        .sliderLabel {
+          font-size: 12.8px;
+          opacity: 0.7;
+          margin-bottom: 8px;
+        }
+
+        .sliderGroup {
+          display: flex;
+
+          .slider {
+            width: 200px;
+            margin-right: 16px;
+            padding-top: 8px;
+
+            .rc-slider-rail {
+              background-image: linear-gradient(
+                to right,
+                #c4bee7 40%,
+                rgba(255, 255, 255, 0) 20%
+              );
+
+              background-position: bottom;
+              background-size: 8px;
+              background-repeat: repeat-x;
+              background-color: rgba(0, 0, 0, 0);
+              height: 4px;
+            }
+
+            .rc-slider-track {
+              background-color: #3848dc;
+            }
+
+            .rc-slider-handle {
+              border-color: #0c1461;
+            }
+          }
+
+          .sliderInputValue::-webkit-outer-spin-button,
+          .sliderInputValue::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          .sliderInputValue[type="number"] {
+            -moz-appearance: textfield;
+          }
+
+          .sliderInputValue {
+            font-family: inherit;
+            border: 0;
+            border-radius: 3px;
+            text-align: center;
+            width: 40px;
+            margin-right: 8px;
+            padding: 2px 0;
+            font-size: 12.8px;
+          }
+        }
+      }
+
+      .dropdownLabel {
+        font-weight: bold;
+        opacity: 0.2;
+        margin: 0 0 24px;
+      }
+
+      .filterActionsContainer {
+        padding: 16px 8px;
+
+        .copyCssBtn {
+         
+        }
+
+        
+      }
+
+      li {
+        list-style: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .labeledMapsContainer {
+
+        padding: 20px 16px;
+        border-bottom: 1px solid $borderColor;
+
+        .dropdownLabel {
+          padding-left: 8px;
+        }
+
+        .mapListItem {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          line-height: 32px;
+          padding-left: 8px;
+          
+
+          &:hover {
+            cursor: pointer;
+            background: $secondaryHoverColor;
+            border-radius: 5px;
+          }
+
+          span {
+            
+            opacity: 0.5;
+          }
+
+          .mapCheckmark {
+            padding-top: 8px;
+          }
+        }
+      }
+
+      .mapActionsContainer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 16px;
+
+        .addNewMapBtn {
+          opacity: 0.8;
+
+          svg {
+            /* margin-bottom: -4px; */
+          }
+
+          span {
+            margin-left: 8px;
+            padding-bottom: -8px;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background: rgba(233, 234, 242, 0.7);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.filterContainer {
+  .resetValues:hover {
+    cursor: pointer;
+  }
+}
+
+.cssOutput {
+  margin: 8px 0;
+  padding: 12px;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  width: 30%;
+}
