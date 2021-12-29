@@ -28,4 +28,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 ## Learn More
 
 Richard Lundquist is a digital designer and artist based in Copenhagen, Denmark. 
+I made this webapp when I couldn't find an easy way to tweak the styles of interactive maps without having to use proprietary software. 
+Please let me know if you have concerns or questions. I'm new to React and would gladly like to know if anything could be improved. 
+
 Check out more of my projects: https://richardlundquist.xyz/
