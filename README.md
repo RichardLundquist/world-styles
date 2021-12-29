@@ -5,7 +5,7 @@
 World Styles is a GUI editor for Leaflet maps using CSS filters. You can edit the sample maps or import your own Tile data through an URL. 
 https://leafletjs.com/
 
-Sample maps are from openstreetmap, opentopomap and Stamen Design. Use appropriate attribution in your project. 
+Sample maps used are from OpenStreetMap (https://openstreetmap.fr/, https://www.openstreetmap.org/), OpenTopoMap (https://opentopomap.org/) and Stamen Design (https://stamen.com/). Always check and use appropriate attribution in your project. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
