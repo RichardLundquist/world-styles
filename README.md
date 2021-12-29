@@ -2,7 +2,7 @@
 
 ![Screenshot](scrn.jpg)
 
-World Styles is a GUI editor for Leaflet maps (https://leafletjs.com/) using CSS filters. You can edit the sample maps or import your own Tile data through an URL. 
+World Styles is a GUI editor for Leaflet maps (https://leafletjs.com/) using CSS filters. You can edit the sample maps or import your own hosted basemaps. 
 
 
 ### LIVE DEMO: https://richardlundquist.xyz/world-styles/
