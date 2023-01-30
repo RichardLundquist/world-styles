@@ -2,6 +2,7 @@
   "name": "world-styles",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://richardlundquist.xyz/world-styles/",
   "dependencies": {
     "@carbon/icons-react": "^10.44.0",
     "@material-ui/icons": "^4.11.2",

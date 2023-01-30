@@ -28,7 +28,7 @@ function MapApp() {
 
   const [theMaps, setTheMaps] = useState(MapList.maps);
 
-  const filters = [
+ /*  const filters = [
     {
       label: "Saturation",
       cssValue: "saturate",
@@ -102,7 +102,7 @@ function MapApp() {
       unit: "%",
       handleState: setOpacityValue,
     },
-  ];
+  ]; */
 
   const colorFilters = [
     {
@@ -178,6 +178,8 @@ function MapApp() {
       handleState: setOpacityValue,
     },
   ];
+
+  const filters = colorFilters.concat(otherFilters);
 
   const values = [
     satValue,
