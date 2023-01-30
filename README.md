@@ -6,9 +6,9 @@
 World Styles is a GUI editor for Leaflet maps (https://leafletjs.com/) using CSS filters. You can edit the sample maps or import your own hosted basemaps. 
 
 ### How to use it? 
-1 Use one of the available basemaps or link to another map by clicking "Add new map" in the "Maps" dropdown.
-2 Tweak the styling of the map with CSS filters by using the sliders. 
-3 Copy the CSS by clicking the "Copy CSS" button in the bottom of the "Filters" dropdown.
+1 Use one of the available basemaps or link to another map by clicking "Add new map" in the "Maps" dropdown. <br/>
+2 Tweak the styling of the map with CSS filters by using the sliders.  <br/>
+3 Copy the CSS by clicking the "Copy CSS" button in the bottom of the "Filters" dropdown. <br/>
 
 
 ### Live demo: https://richardlundquist.xyz/world-styles/
