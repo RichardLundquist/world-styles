@@ -2,7 +2,7 @@
 
 ![Screenshot](scrn.jpg)
 
-### What is it?
+## What is it?
 World Styles is a GUI editor for Leaflet maps (https://leafletjs.com/) using CSS filters. You can edit the sample maps or import your own hosted basemaps. 
 
 ### How to use it? 
