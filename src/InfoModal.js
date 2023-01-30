@@ -1,4 +1,4 @@
-import { ArrowUpRight16 } from "@carbon/icons-react";
+import { ArrowUpRight } from "@carbon/icons-react";
 
 export default function InfoModal() {
   return (
@@ -7,6 +7,11 @@ export default function InfoModal() {
         <div>
           <h4 className="linkfield_header">Who is this for?</h4>
           <p>People wanting to style their leaflet maps</p>
+        </div>
+        <div>
+          <h4 className="linkfield_header">How do I use it?</h4>
+          <p>1. Use one of the basemaps available from the MAPS dropdown, or link to your own map. </p>
+          <p>2. Tweak the styles of the maps by moving the sliders. Click the "copy CSS" button in the bottom of the dropdown to paste into your own project.</p>
         </div>
 
         <div>
@@ -21,7 +26,7 @@ export default function InfoModal() {
             rel="noreferrer"
           >
             <span>leafletjs.com/</span>
-            <ArrowUpRight16 />
+            <ArrowUpRight size={16} />
           </a>
           <a
             className="baseMapLink linkfield_link"
@@ -30,7 +35,7 @@ export default function InfoModal() {
             rel="noreferrer"
           >
             <span>richardlundquist.xyz</span>
-            <ArrowUpRight16 />
+            <ArrowUpRight size={16} />
           </a>
         </div>
       </div>

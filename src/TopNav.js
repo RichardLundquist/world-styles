@@ -5,10 +5,10 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import {
-  CopyFile16,
-  Reset16,
-  DocumentAdd16,
-  Checkmark24,
+  CopyFile,
+  Reset,
+  DocumentAdd,
+  Checkmark,
 } from "@carbon/icons-react";
 
 import Slider from "rc-slider";
@@ -107,7 +107,7 @@ const TopNav = (props) => {
                             f.handleState(e.target.value);
                           }}
                         ></input>
-                        <Reset16
+                        <Reset size={16}
                           className="resetValues"
                           onClick={() => {
                             f.handleState(f.initialValue);
@@ -145,7 +145,7 @@ const TopNav = (props) => {
                             f.handleState(e.target.value);
                           }}
                         ></input>
-                        <Reset16
+                        <Reset size={16}
                           className="resetValues"
                           onClick={() => {
                             f.handleState(f.initialValue);
@@ -177,7 +177,7 @@ const TopNav = (props) => {
                       }, 500);
                     }}
                   >
-                    <CopyFile16 className="filterActionsIcon" />
+                    <CopyFile size={16} className="filterActionsIcon" />
                     <p className="filterActionsLabel">Copy CSS</p>
                     {/* <button className="filterBtn" onClick={copyCss}>
                   
@@ -196,7 +196,7 @@ const TopNav = (props) => {
                     });
                   }}
                 >
-                  <Reset16 className="filterActionsIcon" />
+                  <Reset size={16} className="filterActionsIcon" />
                   <p className="filterActionsLabel">Reset all</p>
                 </div>
               </div>
@@ -230,7 +230,7 @@ const TopNav = (props) => {
                       </span>
 
                       {props.activeMap === i ? (
-                        <Checkmark24 className="mapCheckmark" />
+                        <Checkmark size={24} className="mapCheckmark" />
                       ) : null}
                     </li>
                   ))}
@@ -258,7 +258,7 @@ const TopNav = (props) => {
                       }, 500);
                     }}
                   >
-                    <CopyFile16 className="filterActionsIcon" />
+                    <CopyFile size={16} className="filterActionsIcon" />
                     <p className="filterActionsLabel">Copy component</p>
                   </div>
                 </CopyToClipboard>
@@ -272,7 +272,7 @@ const TopNav = (props) => {
                     }
                   }}
                 >
-                  <DocumentAdd16 className="addNewMapIcon" />
+                  <DocumentAdd size={16} className="addNewMapIcon" />
                   <span>Add new map</span>
                 </div>
               </div>

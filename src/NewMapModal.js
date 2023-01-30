@@ -1,7 +1,7 @@
 import React, { useState, Component, useContext } from "react";
 //import { TextField } from "@material-ui/core";
 
-import { Close32, ArrowUpRight16 } from "@carbon/icons-react";
+import { Close, ArrowUpRight } from "@carbon/icons-react";
 
 import { MapContext } from "./Context/MapContext";
 import { ErrorContext } from "./Context/ErrorContext";
@@ -66,7 +66,7 @@ export default function NewMapModal(props) {
             setReqFieldError(false);
           }}
         >
-          <Close32 />
+          <Close size={32} />
         </div>
         <div className="newMapInput">
           <form onSubmit={handleSubmit} className="newMapInputForm">
@@ -116,7 +116,7 @@ export default function NewMapModal(props) {
               target="_blank"
             >
               <span>leaflet-providers</span>
-              <ArrowUpRight16 className="linkArrowIcon" />
+              <ArrowUpRight size={16} className="linkArrowIcon" />
             </a>
             <a
               className="baseMapLink linkfield_link"
@@ -125,7 +125,7 @@ export default function NewMapModal(props) {
             >
               <span>wiki.openstreetmap</span>
 
-              <ArrowUpRight16 className="linkArrowIcon" />
+              <ArrowUpRight size={16} className="linkArrowIcon" />
             </a>
             <p className="disclaimer">Check the license for basemaps before using in your project.   
                </p>

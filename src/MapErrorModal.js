@@ -1,6 +1,6 @@
 import React, { Component, useContext } from "react";
 
-import { Close32 } from "@carbon/icons-react";
+import { Close } from "@carbon/icons-react";
 import { ErrorContext } from "./Context/ErrorContext";
 import { MapContext } from "./Context/MapContext";
 
@@ -19,7 +19,7 @@ export default function MapErrorModal(props) {
             props.changeMap(0);
           }}
         >
-          <Close32 />
+          <Close size={32} />
         </div>
         <p className="errorText">The basemap URL is invalid!</p>
         <div className="btnContainer">
@@ -47,3 +47,4 @@ export default function MapErrorModal(props) {
     </div>
   );
 }
+
