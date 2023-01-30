@@ -1,8 +1,18 @@
-# Getting Started with World Styles
+# World Styles
 
 ![Screenshot](scrn.jpg)
 
-World Styles is a GUI editor for Leaflet maps using CSS filters. 
+World Styles is a GUI editor for Leaflet maps (https://leafletjs.com/) using CSS filters. You can edit the sample maps or import your own hosted basemaps. 
+
+
+### LIVE DEMO: https://richardlundquist.xyz/world-styles/
+
+Sample maps included in this project are from <br/>
+OpenStreetMap (https://openstreetmap.fr/, https://www.openstreetmap.org/), <br/>
+OpenTopoMap (https://opentopomap.org/)  <br/>
+Stamen Design (https://stamen.com/). 
+
+Always check and use appropriate attribution in your project. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -24,5 +34,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Learn More
 
-Richard Lundquist is a digital designer and artist based in Copenhagen, Denmark. 
+I made this webapp when I couldn't find an easy way to tweak and experiment with colors and styles of interactive maps without having to use proprietary software. 
+Please let me know if you have concerns or questions. I'm new to React and would gladly like to know if anything could be improved. 
+
 Check out more of my projects: https://richardlundquist.xyz/
